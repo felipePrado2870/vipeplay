@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:vibeplay/screens/home_screen.dart';
+import 'package:vibeplay/screens/login_screen.dart';
 import 'dart:async';
 
 
@@ -18,7 +18,7 @@ class SplashScreenState extends State<SplashScreen> {
     Timer(const Duration(seconds: 7), () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => const HomeScreen()),
+        MaterialPageRoute(builder: (context) => LoginScreen()),
       );
     });
   }
