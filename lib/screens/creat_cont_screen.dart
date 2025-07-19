@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:vibeplay/screens/home_screen.dart';
+import 'package:vibeplay/screens/login_screen.dart';
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
   @override
@@ -217,7 +218,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
             child: Center(
               child: TextButton(
                 onPressed: () {
-                  Navigator.pop(context);
+                 Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => LoginScreen()),
+                  );
                 },
                 child: const Text(
                   'Já tem uma conta? Faça login',
