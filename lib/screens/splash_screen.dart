@@ -23,18 +23,15 @@ class SplashScreenState extends State<SplashScreen> {
     });
   }
 
-  @override
+    @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       backgroundColor: Colors.black,
       body: Center(
-        child: Text(
-          'Splash Screen',
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 32,
-            fontWeight: FontWeight.bold,
-          ),
+        child: SizedBox(
+          width: 300, // Largura desejada da imagem
+          height: 300, // Altura desejada da imagem
+          child: Image.asset('assets/image/logoVipePlay.png'),
         ),
       ),
     );
